@@ -1,4 +1,12 @@
 language: java
 jdk:
 - oraclejdk8
-script: ant build
+addons:
+   sonarcloud: 
+      organization: "anniemo1002-github"
+      token: 
+         secure: 6a0f4e2160e6f6ff72f3238cf3317871c1f8c9dc
+script: 
+- sonar-scanner
+- ant build
+
