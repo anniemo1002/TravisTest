@@ -4,7 +4,7 @@ addons:
   sonarcloud:
     organization: anniemo1002-github
     token:
-      secure: QNRxuj2eqGqjoChrCczc
+      secure: c983162b7a32ec63aca31cc43b652f40976ff3d3
 jdk:
   - oraclejdk8
 script:
