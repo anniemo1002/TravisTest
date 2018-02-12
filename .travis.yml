@@ -1,13 +1,11 @@
-sudo: false
-install: true
-addons:
-  sonarcloud:
-    organization: "anniemo1002-github"
-    token:
-      secure: 0beea288bd05a9ab834c5198045943614e8c1741
+language: java
 jdk:
-  - oraclejdk8
-cache:
-  directories:
-    - '$HOME/.m2/repository'
-    - '$HOME/.sonar/cache'
+   - oraclejdk8
+addons:
+   sonarcloud:
+      organization: "anniemo1002-github"
+      token: 
+         secure:
+script: 
+   - sonar-scanner
+   - ant build
